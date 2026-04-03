@@ -1,0 +1,144 @@
+.nav {
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+.upper-nav {
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.upper-nav .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: orange;
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.upper-nav .logo:hover {
+    transform: translateY(-3px);
+}
+
+.upper-nav .input-items {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.upper-nav .input-items input {
+    width: 90%;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+
+.upper-nav .input-items button {
+    width: 10%;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.upper-nav .cart {
+    width: 55px;
+    height: 55px;
+    border: 0.5px solid grey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 10px grey;
+}
+.upper-nav .cart:hover{
+    transform: rotateY(-30deg);
+}
+
+.upper-nav .cart svg {
+    font-size: 35px;
+    color: white;
+}
+
+.upper-nav .cart span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 12px;
+    padding: 4px 7px;
+    background-color: orangered;
+    border-radius: 50%;
+    color: white;
+}
+
+
+.lower-nav {
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.lower-nav div {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.lower-nav li {
+    list-style: none;
+}
+
+.lower-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.lower-nav a:hover,
+.lower-nav a.active {
+background: linear-gradient(45deg, #ff6b35, #f7931e);
+padding: 8px 16px;
+}
+
+
+@media (max-width: 768px) {
+    .upper-nav .input-items{
+        display: none;
+    }
+
+    .lower-nav div {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
